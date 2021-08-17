@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+    margin:60px;
+}
+
+.input-label {
+    display: block;
+    font-size: large;
+    font-weight: 600;
+  }
+
+
+  #output-div {
+
+    margin: 20px;
+  }
