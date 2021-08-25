@@ -1,16 +1,21 @@
-.container {
-    text-align: center;
-    margin:60px;
+.heading {
+  text-align: center;
 }
 
-.input-label {
-    display: block;
-    font-size: large;
-    font-weight: 600;
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
-  #output-div {
+#output-div {
+      text-align: center;
+      margin-top: 30px;   
+}
 
-    margin: 20px;
-  }
+
+.note {
+  text-align: center;
+  margin-top: 30px;
+}

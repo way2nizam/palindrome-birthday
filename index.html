@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindrome Birthdate</title>
+    <title>Palindrome Birthday Practice</title>
     <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
+    <header class="heading">
+        <h1>Palindrome Birthday Practice</h1>
+    </header>
 
-    <div class="container">
-        <h1>Palindrome Birthday</h1>
-
-        <label class="input-label" for="input-dob">Enter your Birthdate here:</label>
-        <input type="date" id="input-dob">
-
+    <main class="container">
+        <label for="input-birthday">Enter Birthday:</label>
+        <input type="date" id="input-birthday">
         <button id="check-btn">Check</button>
+    </main>
+    <div id="output-div"></div>
 
-        <div id="output-div"></div>
-
+    <div class="note">
+        <p><strong>Note:</strong> This web-app now works only for this format eg. MM/DD/YYY.</p>
     </div>
 
-    <script src="/index.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
