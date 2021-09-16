@@ -1,21 +1,54 @@
-.heading {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  max-width: 600px;
+  margin: auto;
+  background-image: url(/images/ballon.jpg);
+  background-size: cover;
 }
+
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+
+#check-btn {
+  background-color: #00BFFF;
+  font-size: 18px;
+  padding: 6px;
+  margin-top: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#input-birthday {
+  padding: 10px;
 }
 
 
 #output-div {
-      text-align: center;
-      margin-top: 30px;   
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 6px;
+  background-color: skyblue;
+  color: #ffffff;
 }
 
 
-.note {
-  text-align: center;
-  margin-top: 30px;
+.container p {
+  margin-top: 40px;
+  font-size: 18px;
+  color: lightslategray;
+}
+
+@media only screen and (max-width:600px) {
+  body {
+    margin:15px;
+    background-image: url(/images/ballon-m.jpg);
+  }
 }

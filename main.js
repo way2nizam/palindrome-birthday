@@ -2,8 +2,11 @@ const inputBirthday = document.querySelector('#input-birthday');
 const checkButton = document.querySelector('#check-btn');
 const outputMessage = document.querySelector('#output-div');
 
+outputMessage.style.display = 'none';
+
 function showMessage(msg) {
-  outputMessage.innerText = msg;
+  outputMessage.style.display = 'block';
+  outputMessage.innerHTML = 'Result - ' + msg;
 }
 
 function checkPalindrome(dob, reverseDob) {
