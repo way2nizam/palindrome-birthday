@@ -10,7 +10,9 @@ function showMessage(msg) {
 }
 
 function checkPalindrome(dob, reverseDob) {
-  if (dob === reverseDob) {
+  if (!inputBirthday.value) {
+    alert('BirthDate is empty');
+  } else if (dob === reverseDob) {
     showMessage('Yes, Your birthday is palindrome.');
   } else showMessage('No, Your birthday is not palindrome.');
 }
