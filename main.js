@@ -6,7 +6,7 @@ outputMessage.style.display = 'none';
 
 function showMessage(msg) {
   outputMessage.style.display = 'block';
-  outputMessage.innerHTML = 'Result - ' + msg;
+  outputMessage.innerText = 'Result - ' + msg;
 }
 
 function checkPalindrome(dob, reverseDob) {
