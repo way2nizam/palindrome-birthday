@@ -4,21 +4,21 @@ const outputMessage = document.querySelector('#output-div');
 
 outputMessage.style.display = 'none';
 
-function showMessage(msg) {
+const showMessage = (msg) => {
   outputMessage.style.display = 'block';
   outputMessage.innerText = 'Result - ' + msg;
-}
+};
 
-function checkPalindrome(dob, reverseDob) {
+const checkPalindrome = (dob, reverseDob) => {
   if (!inputBirthday.value) {
     outputMessage.style.display = 'none';
     alert('Input field is empty. Please enter your Birthdate.');
   } else if (dob === reverseDob) {
     showMessage('Yes, Your birthday is palindrome.');
   } else showMessage('No, Your birthday is not palindrome.');
-}
+};
 
-function eventHandler() {
+const eventHandler = () => {
   const birthdayInArrayFormat = inputBirthday.value.toString().split('-');
 
   const birthdayInStringFormat =
@@ -29,6 +29,6 @@ function eventHandler() {
   const reversedBirthday = birthdayInStringFormat.split('').reverse().join('');
 
   checkPalindrome(birthdayInStringFormat, reversedBirthday);
-}
+};
 
 checkButton.addEventListener('click', eventHandler);
